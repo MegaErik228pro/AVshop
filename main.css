@@ -66,6 +66,7 @@ header .top-bar .wrap .top-bar-left-side .top-bar-dropdown li {
   display: inline-block;
   position: relative;
   height: 56px;
+  z-index: 2;
 }
 
 header .top-bar .wrap .top-bar-left-side .top-bar-dropdown li a {
@@ -680,12 +681,102 @@ footer .contacts .social img {
 }
 
 @media (max-width: 914px) {
+  .month-product {
+    height: 420px;
+  }
   .discounts .product-all .product:nth-child(6), .best .product-all .product:nth-child(6), .ad .product-all .product:nth-child(6),
   .vd .product-all .product:nth-child(6) {
     display: none;
   }
   .company-all div:nth-child(5) {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header .top-bar .wrap .top-bar-right-side {
+    width: 28%;
+  }
+  .month-product .goto span {
+    font-size: 34px;
+  }
+  .discounts .product-all .product:nth-child(5), .best .product-all .product:nth-child(5), .ad .product-all .product:nth-child(5),
+  .vd .product-all .product:nth-child(5) {
+    display: none;
+  }
+  .company-all div:nth-child(4) {
+    display: none;
+  }
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  footer .logo {
+    width: 63%;
+  }
+  footer div {
+    margin: 10px 0;
+  }
+  footer .contacts {
+    width: 100%;
+  }
+  footer .contacts .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .contacts .social img {
+    width: 86px;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  footer .buyer, footer .company, footer .seller, footer .contacts {
+    font-size: 88px;
+  }
+  footer .contacts .number {
+    font-size: 20px;
+  }
+  footer .buyer li, footer .company li, footer .seller li {
+    font-size: 30px;
+  }
+  footer .buyer, footer .company, footer .seller {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  header .top-bar .wrap .top-bar-right-side .svg-icon img {
+    display: none;
+  }
+  header .top-bar .wrap .top-bar-right-side {
+    width: 56%;
+  }
+  header .bottom-bar .wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .bottom-bar {
+    height: 100%;
+  }
+  header .bottom-bar div {
+    margin-top: 5px;
+  }
+  header .bottom-bar .wrap .search {
+    width: 113%;
+  }
+  header .bottom-bar .wrap .logo {
+    width: 344px;
+  }
+  .month-product {
+    height: 227px;
+  }
+  .month-product .goto {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=main.css.map */
