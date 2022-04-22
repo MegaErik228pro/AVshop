@@ -5,6 +5,9 @@
     box-sizing: border-box;
 	font-family: "Strong Regular";
 	text-decoration: none;
+	a{
+		color: #000000;
+	}
 }
 .superContainer{
     overflow: hidden;
@@ -30,6 +33,40 @@ header{
                 width: 9%;
                 justify-content: space-between;
 				align-items: center;
+				.top-bar-dropdown li{
+					padding-left: 13px;
+					padding-right: 13px;
+					display: inline-block;
+					position: relative;
+					height: 56px;
+					a{
+						display: block;
+						position: relative;
+						line-height: 56px;
+						white-space: nowrap;
+					}
+					a:hover{
+						color: rgb(204, 0, 255);
+					}
+					ul{
+						display: block;
+						position: absolute;
+						top: 90%;
+						left: 0;
+						width: auto;
+						visibility: hidden;
+						opacity: 0;
+						background: #FFFFFF;
+						box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+						transition: all 0.3s ease;
+					}
+				}
+				.top-bar-dropdown li:hover > ul
+				{
+					top: 103%;
+					visibility: visible;
+					opacity: 1;
+				}
             }
             .top-bar-right-side{
                 display: flex;
@@ -39,6 +76,9 @@ header{
                 align-items: center;
 				.svg-icon{
 					width: 20px;
+				}
+				a:hover{
+					color: rgb(204, 0, 255);
 				}
             }
         }
@@ -78,7 +118,65 @@ header{
 					border: 2px solid #000000;
 					margin-top: -2px;
 					margin-left: -2px;
-					background: linear-gradient(180deg, rgba(204, 0, 255, 0.3) 0%, rgba(0, 26, 255, 0) 100%);
+					background: rgba(248, 220, 255, 1);
+					.bottom-bar-dropdown li{
+						padding-left: 13px;
+						padding-right: 13px;
+						display: inline-block;
+						position: relative;
+						height: 56px;
+						z-index: 1;
+						a{
+							display: block;
+							position: relative;
+							line-height: 56px;
+							white-space: nowrap;
+						}
+						a:hover{
+							color: rgb(204, 0, 255);
+						}
+						ul{
+							display: block;
+							position: absolute;
+							top: 90%;
+							left: -100%;
+							width: auto;
+							visibility: hidden;
+							opacity: 0;
+							background: #FFFFFF;
+							box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+							transition: all 0.3s ease;
+							li{
+								padding-left: 13px;
+								padding-right: 13px;
+								display: inline-block;
+								position: relative;
+								height: 56px;
+								z-index: 1;
+								ul{
+									display: block;
+									position: absolute;
+									top: 0%;
+									left: 100%;
+									width: auto;
+									visibility: hidden;
+									opacity: 0;
+									background: #FFFFFF;
+									box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
+									transition: all 0.3s ease;
+								}
+								.comp-dropdown{
+									left: 113%;
+								}
+							}
+							
+						}
+					}
+					.bottom-bar-dropdown li:hover > ul
+					{
+						visibility: visible;
+						opacity: 1;
+					}
 				}
 				form{
 					width: 60%;
@@ -102,14 +200,26 @@ header{
                 	flex-direction: row;
 					align-items: center;
 					justify-content: center;
-					width: 10.4%;
+					width: 11%;
 					height: 40px;
 					border: 2px solid #000000;
 					border-radius: 0px 10px 10px 0px;
-					background: linear-gradient(180deg, rgba(204, 0, 255, 0.3) 0%, rgba(0, 26, 255, 0) 100%);
+					background: rgba(248, 220, 255, 1);
 					img{
+						margin-top: 2px;
 						width: 32px;
 					}
+				}
+				@keyframes click{
+					from{
+						background: rgba(248, 220, 255, 1);
+					}
+					to{
+						background: white;
+					}
+				}
+				.search_icon:hover{
+					animation: click 0.5s linear alternate infinite;
 				}
             }
             .bottom-bar-right-side{
@@ -149,8 +259,11 @@ header{
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		color: white;
-		font-size: 64px;
+		span{
+			font-size: 64px;
+			margin-bottom: 10px;
+			color: white;
+		}
 	}
 }
 //DISCOUNTS-BEST-AD-VD
@@ -172,7 +285,32 @@ header{
 		.product{
 			height: 200px;
 			width: 170px;
-			border: solid 1px black;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+			border-radius: 10px;
+			margin: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			a{
+				margin-left: 0%;
+			}
+			.photo{
+				width: 100px;
+				img{
+					width: 100px;
+				}
+			}
+			.price{
+				font-size: 18px;
+			}
+			.name{
+				font-size: 16px;
+			}
+		}
+		.product:hover{
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.571);
+			transition: all 0.3s ease;
 		}
 	}
 }
@@ -188,10 +326,14 @@ header{
 	align-items: center;
 	padding-left: 2.5%;
 	padding-right: 2.5%;
-	.company{
+	img{
 		height: 130px;
 		width: 200px;
-		border: solid 1px black;
+		border-radius: 10px;
+	}
+	img:hover{
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.571);
+		transition: all 0.3s ease;
 	}
 }
 //FOOTER
@@ -224,6 +366,9 @@ footer{
 		li{
 			list-style-type: none;
 			font-size: 16px;
+			a:hover{
+				color: rgb(204, 0, 255);
+			}
 		}
 	}
 	.contacts{
@@ -236,5 +381,86 @@ footer{
 		.number{
 			font-size: 18px;
 		}
+		.social{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+			width: 100%;
+			img{
+				width: 40px;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+
+//MEDIA
+@media (max-width: 1864px) {
+	//DISCOUNTS-BEST-AD-VD
+	.discounts .product-all .product:nth-child(9), .best .product-all .product:nth-child(9), .ad .product-all .product:nth-child(9), 
+	.vd .product-all .product:nth-child(9){
+		display: none;
+	}
+	//COMPANY
+	.company-all div:nth-child(8){
+		display: none;
+	}
+}
+@media (max-width: 1570px) {
+	//DISCOUNTS-BEST-AD-VD
+	.discounts .product-all .product:nth-child(8), .best .product-all .product:nth-child(8), .ad .product-all .product:nth-child(8), 
+	.vd .product-all .product:nth-child(8){
+		display: none;
+	}
+	//COMPANY
+	.company-all div:nth-child(7){
+		display: none;
+	}
+}
+@media (max-width: 1220px) {
+	//HEADER
+	header .top-bar .wrap .top-bar-right-side{
+		width: 20%;
+	}
+	//MONTH PRODUCT
+	.month-product .goto{
+		height: 60px;
+		border-radius: 0 0 36px 36px;
+		span{
+			font-size: 41px;
+		}
+	}
+	//DISCOUNTS-BEST-AD-VD
+	.discounts .product-all .product:nth-child(7), .best .product-all .product:nth-child(7), .ad .product-all .product:nth-child(7), 
+	.vd .product-all .product:nth-child(7){
+		display: none;
+	}
+	.discounts .product-all, .best .product-all, .ad .product-all, .vd .product-all {
+		width: 99%;
+	}
+	//COMPANY
+	.company-all div:nth-child(6){
+		display: none;
+	}
+	//FOOTER
+	footer .buyer, footer .company, footer .seller, footer .contacts{
+		font-size: 28px;
+	}
+	footer .contacts .number{
+		font-size: 15px;
+	}
+	footer .buyer li, footer .company li, footer .seller li {
+		font-size: 11px;
+	}
+}
+@media (max-width: 914px) {
+	//DISCOUNTS-BEST-AD-VD
+	.discounts .product-all .product:nth-child(6), .best .product-all .product:nth-child(6), .ad .product-all .product:nth-child(6), 
+	.vd .product-all .product:nth-child(6){
+		display: none;
+	}
+	//COMPANY
+	.company-all div:nth-child(5){
+		display: none;
 	}
 }

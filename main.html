@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVshop</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
 </head>
 <body>
     <div class="superContainer">
@@ -14,16 +15,36 @@
             <!--TOP BAR-->
             <div class="top-bar">
                 <div class="wrap">
+                    <!--LEFT SIDE-->
                     <div class="top-bar-left-side">
-                        <p>Русский</p>
-                        <p>BYN</p>
+                        <ul class="top-bar-dropdown">
+                            <li>
+                                <a href="#">Русский</a>
+                                <ul>
+                                    <li><a href="#">Русский</a></li>
+                                    <li><a href="#">Русский</a></li>
+                                    <li><a href="#">Русский</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="top-bar-dropdown">  
+                            <li>
+                                <a href="#">BYN</a>
+                                <ul>
+                                    <li><a href="#">BYN</a></li>
+                                    <li><a href="#">BYN</a></li>
+                                    <li><a href="#">BYN</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
+                    <!--RIGHT SIDE-->
                     <div class="top-bar-right-side">
                         <div class="svg-icon">
                             <img src="Иконки/профиль.svg" alt="Icon"> 
                         </div>
-                        <p>Регистрация</p>
-                        <p>Вход</p>   
+                        <a href="#">Регистрация</a>
+                        <a href="#">Вход</a>   
                     </div>
                 </div>
             </div>
@@ -31,25 +52,48 @@
             <div class="bottom-bar">
                     <div class="wrap">
                         <div class="logo">
-                            <img src="Логотип/AVshop.svg" alt="Logo"> 
+                            <a href="main.html"><img src="Логотип/AVshop.svg" alt="Logo"></a> 
                         </div>
                         <div class="search">
                             <div class="catalog">
-                                <p>Каталог</p>
+                                <ul class="bottom-bar-dropdown">
+                                    <li>
+                                        <a href="#">Каталог</a>
+                                        <ul>
+                                            <li>
+                                                <a href="#">Смартфоны, ТВ и электроника</a>
+                                                <ul>
+                                                    <li><a href="#">Смартфоны, аксессуары</a></li>
+                                                    <li><a href="#">Аудиотехника</a></li>
+                                                    <li><a href="#">Портативная аудиотехника</a></li>
+                                                    <li><a href="#">Фото, видеосъемка</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Компьютеры и периферия</a>
+                                                <ul class="comp-dropdown">
+                                                    <li><a href="#">Компьютерная техника</a></li>
+                                                    <li><a href="#">Компьютерная периферия</a></li>
+                                                    <li><a href="#">Комплектующие</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                             <form>
                                 <input class="search_input" type="text" placeholder="Поиск..." />
                             </form>
                             <div class="search_icon">
-                                <img src="Иконки/поиск.svg" alt="Search">
+                                <a href="#"><img src="Иконки/поиск.svg" alt="Search"></a>
                             </div>
                         </div>
                         <div class="bottom-bar-right-side">
                             <div class="svg_icon">
-                                <img src="Иконки/лайк.svg" alt="Liked">
+                                <a href="#"><img src="Иконки/лайк.svg" alt="Liked"></a>
                             </div>
                             <div class="svg_icon">
-                                <img src="Иконки/корзина 2.svg" alt="Cart">
+                                <a href="#"><img src="Иконки/корзина 2.svg" alt="Cart"></a>
                             </div>
                         </div>
                     </div>
@@ -60,21 +104,60 @@
 
         <!--MONTH PRODUCT-->
         <section class="month-product">
-            <div class="goto">
-                <p>Товар месяца</p>
-            </div>
+            <a href="#" class="goto">
+                <span>Товар месяца</span>
+            </a>
         </section>
 
         <!--DISCOUNTS-->
         <section class="discounts">
             <a>Скидки</a>
             <div class="product-all">
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
             </div>
         </section>
 
@@ -82,35 +165,115 @@
         <section class="best">
             <a>Лучшее</a>
             <div class="product-all">
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
             </div>
         </section>
         
         <!--COMPANY-->
         <section class="company-all">
-                <div class="company">a</div>
-                <div class="company">a</div>
-                <div class="company">a</div>
-                <div class="company">a</div>
-                <div class="company">a</div>
-                <div class="company">a</div>
+                <div><a href="#"><img src="Главная/apple.jpg" alt="Apple"></a></div>
+                <div><a href="#"><img src="Главная/apple.jpg" alt="Apple"></a></div>
+                <div><a href="#"><img src="Главная/apple.jpg" alt="Apple"></a></div>
+                <div><a href="#"><img src="Главная/apple.jpg" alt="Apple"></a></div>
+                <div><a href="#"><img src="Главная/apple.jpg" alt="Apple"></a></div>
+                <div><a href="#"><img src="Главная/apple.jpg" alt="Apple"></a></div>
+                <div><a href="#"><img src="Главная/apple.jpg" alt="Apple"></a></div>
+                <div><a href="#"><img src="Главная/apple.jpg" alt="Apple"></a></div>
         </section>
 
         <!--AD-->
         <section class="ad">
             <a>Аудиотехника</a>
             <div class="product-all">
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
             </div>
         </section>
 
@@ -118,51 +281,99 @@
         <section class="vd">
             <a>Видеотехника</a>
             <div class="product-all">
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
-                <div class="product">a</div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
+                <div class="product">
+                    <div class="photo"><a href="#"><img src="Главная/apple_iphone_13_pro_max_128gb.jpg"></a></div>
+                    <a class="price">3490BYN</a>
+                    <a class="name">iPhone 13 Pro Max</a>
+                </div>
             </div>
         </section>
 
         <!--FOOTER-->
         <footer>
+            <!--LOGO-->
             <div class="logo">
                 <img src="Логотип/AVshop.svg" alt="Logo"> 
                 <a>2003-2022</a>
             </div>
+            <!--BUYER-->
             <div class="buyer">
                 <a>Покупателю</a>
                 <ul>
-                    <li>Права потребителя</li>
-                    <li>Вопрос-ответ</li>
-                    <li>Пользовательское соглашение</li>
-                    <li>Политика конфиденциальности</li>
+                    <li><a href="#">Права потребителя</a></li>
+                    <li><a href="#">Вопрос-ответ</a></li>
+                    <li><a href="#">Пользовательское соглашение</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
                 </ul>
             </div>
+            <!--COMPANY-->
             <div class="company">
                 <a>Компания</a>
                 <ul>
-                    <li>Вакансии</li>
-                    <li>О проекте</li>
-                    <li>Наши партнёры</li>
-                    <li>Обратная связь</li>
+                    <li><a href="#">Вакансии</a></li>
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Наши партнёры</a></li>
+                    <li><a href="#">Обратная связь</a></li>
                 </ul>
             </div>
+            <!--SELLER-->
             <div class="seller">
                 <a>Продавцу</a>
                 <ul>
-                    <li>Продавать на AVshop.by</li>
-                    <li>Создать свой магазин</li>
-                    <li>Реклама</li>
-                    <li>Справка и FAQ</li>
+                    <li><a href="#">Продавать на AVshop.by</a></li>
+                    <li><a href="#">Создать свой магазин</a></li>
+                    <li><a href="#">Реклама</a></li>
+                    <li><a href="#">Справка и FAQ</a></li>
                 </ul>
             </div>
+            <!--CONTACTS-->
             <div class="contacts">
                 <a>Контакты</a>
                 <a class="number">+375 (29) 330 05 06</a>
+                <div class="social">
+                    <a href="#"><img src="Главная/inst.png" alt="Instagram"></a>
+                    <a href="#"><img src="Главная/vk.png" alt="VK"></a>
+                </div>
             </div>
         </footer>
     </div>
