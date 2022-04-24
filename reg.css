@@ -295,6 +295,7 @@ header .bottom-bar .wrap .search form .search_input {
   border-top: 2px solid #000000;
   border-bottom: 2px solid #000000;
   outline: none;
+  padding-left: 2%;
 }
 
 header .bottom-bar .wrap .search form .search_icon {
@@ -549,7 +550,7 @@ footer .contacts .social img {
   border-radius: 10px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   header .top-bar .wrap .top-bar-right-side {
     width: 20%;
   }
