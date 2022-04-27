@@ -309,9 +309,21 @@ header{
         a, div{
             margin-top: 15px;
         }
-        .product-name{
+        .product-name-all{
+            display: flex;
+            flex-direction: row;
             margin-top: 0;
-            font-size: 32px;
+            .product-name{
+                font-size: 32px;
+                margin-top: 0;
+            }
+            img{
+                margin-left: 10px;
+                width: 38px;
+            }
+            img:hover{
+                cursor: pointer;
+            }
         }
         .memory, .color{
             display: flex;

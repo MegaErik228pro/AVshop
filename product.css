@@ -463,9 +463,29 @@ header .bottom-shadow {
   margin-top: 15px;
 }
 
-.product-top .product-info .product-name {
+.product-top .product-info .product-name-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 0;
+}
+
+.product-top .product-info .product-name-all .product-name {
   font-size: 32px;
+  margin-top: 0;
+}
+
+.product-top .product-info .product-name-all img {
+  margin-left: 10px;
+  width: 38px;
+}
+
+.product-top .product-info .product-name-all img:hover {
+  cursor: pointer;
 }
 
 .product-top .product-info .memory, .product-top .product-info .color {
