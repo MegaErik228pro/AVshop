@@ -537,7 +537,7 @@ header .bottom-shadow {
   margin-top: 20px;
 }
 
-.cart .buy-button button {
+.cart .buy-button a {
   width: 80%;
   height: 35px;
   background: -webkit-gradient(linear, left top, right top, from(#AD00FF), to(#4200FF));
@@ -545,9 +545,18 @@ header .bottom-shadow {
   border-radius: 5px;
   color: white;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.cart .buy-button button:hover {
+.cart .buy-button a:hover {
   -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.571);
           box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.571);
   -webkit-transition: all 0.3s ease;
@@ -912,7 +921,7 @@ footer .contacts .social img {
     height: 45px;
     border-radius: 0 0 25px 25px;
   }
-  .cart .buy-button button {
+  .cart .buy-button a {
     height: 61px;
     font-size: 24px;
   }

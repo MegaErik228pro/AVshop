@@ -341,15 +341,18 @@ header{
         display: flex;
         justify-content: center;
         margin-top: 20px;
-        button{
+        a{
             width: 80%;
             height: 35px;
             background: linear-gradient(90deg, #AD00FF 0%, #4200FF 100%);
             border-radius: 5px;
             color: white;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        button:hover{
+        a:hover{
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.571);
             transition: all 0.3s ease;
         }
@@ -640,7 +643,7 @@ footer{
 		}
 	}
     //BUY BUTTON
-    .cart .buy-button button {
+    .cart .buy-button a {
         height: 61px;
         font-size: 24px;
     }

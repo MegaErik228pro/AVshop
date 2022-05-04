@@ -264,13 +264,13 @@ header{
         }
         label {
             display: flex;
-            width: 90px;
+            width: 120px;
             margin-right: 10%;
             text-align: center;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
         }
-        input{
+        input, textarea, select{
             width: 438px;
             height: 37px;
             box-sizing: border-box;
@@ -370,7 +370,7 @@ footer{
 		font-size: 15px;
 	}
 	footer .buyer li, footer .company li, footer .seller li {
-		font-size: 11px;
+		font-size: 16px;
 	}
 }
 @media (max-width: 859px) {

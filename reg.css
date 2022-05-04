@@ -403,18 +403,18 @@ header .bottom-shadow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 90px;
+  width: 120px;
   margin-right: 10%;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.form form input {
+.form form input, .form form textarea, .form form select {
   width: 438px;
   height: 37px;
   -webkit-box-sizing: border-box;
@@ -565,7 +565,7 @@ footer .contacts .social img {
     font-size: 15px;
   }
   footer .buyer li, footer .company li, footer .seller li {
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 
