@@ -653,6 +653,11 @@ footer .contacts .social img {
   .form div label {
     margin-bottom: 10px;
   }
+  .form form label {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .form p {
     margin-left: 5%;
   }
@@ -678,7 +683,7 @@ footer .contacts .social img {
   header .bottom-bar .wrap .search .catalog .bottom-bar-dropdown li ul {
     font-size: 13px;
   }
-  .form form input {
+  .form form input, .form form textarea, .form form select {
     width: 180%;
   }
   footer .buyer, footer .company, footer .seller, footer .contacts {

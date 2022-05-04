@@ -452,6 +452,11 @@ footer{
                 margin-bottom: 10px;
             }
         }
+        form{
+            label{
+                justify-content: center;
+            }
+        }
         p{
             margin-left: 5%;
         }
@@ -479,7 +484,7 @@ footer{
 		font-size: 13px;
 	}
     //FORM
-    .form form input {
+    .form form input, .form form textarea, .form form select {
             width: 180%;
         }
 	//FOOTER
