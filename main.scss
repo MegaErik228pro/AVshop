@@ -3,7 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-	font-family: "Strong Regular";
+	//font-family: "Strong Regular";
+	//FONT
+	@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+	font-family: 'Oswald', sans-serif;
 	text-decoration: none;
 	a{
 		color: #000000;
